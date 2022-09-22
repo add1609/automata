@@ -1,0 +1,27 @@
+.footer {
+    color: var(--secondary);
+    font-size: 12px;
+}
+.footer {
+    line-height: 24px;
+    margin: auto;
+    padding: calc((var(--footer-height) - var(--gap)) / 2) var(--gap);
+    text-align: center;
+}
+.footer span {
+    margin-inline-end: 1px;
+    margin-inline-start: 1px;
+}
+.footer span:last-child {
+    white-space: nowrap;
+}
+.footer a {
+    border-bottom: 1px solid var(--secondary);
+    color: inherit;
+}
+.footer a:hover {
+    border-bottom: 1px solid var(--primary);
+}
+.footer a:hover {
+    color: var(--primary);
+}

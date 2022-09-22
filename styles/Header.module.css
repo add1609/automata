@@ -1,0 +1,59 @@
+.header {
+    display: block;
+}
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    line-height: var(--header-height);
+    margin-inline-end: auto;
+    margin-inline-start: auto;
+    max-width: calc(var(--nav-width) + var(--gap) * 2);
+    padding: 0 var(--content-gap);
+}
+.nav a, .nav button {
+    display: block;
+}
+.formButton {
+    background-color: var(--accent-2);
+    border: 1px solid var(--accent-2);
+    border-radius: .25rem;
+    color: var(--primary);
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-top: .5rem;
+    padding: .375rem .75rem;
+    text-align: center;
+    text-decoration: none;
+    transition: color .15s ease-in-out,
+    background-color .15s ease-in-out,
+    border-color .15s ease-in-out,
+    box-shadow .1s ease-in-out;
+    user-select: none;
+    vertical-align: middle;
+}
+.formButton:hover,
+.formButton:active {
+    background-color: var(--accent-3);
+    border-color: var(--accent-3);
+}
+.formButton:active {
+    box-shadow: 0 0 0 .15rem rgba(60, 153, 110, .5);
+}
+.formButton:disabled {
+    background-color: var(--accent-4);
+    border-color: var(--accent-4);
+    color: var(--secondary);
+}
+@media screen and (max-width: var(--break-md)) {
+    .nav {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: var(--break-sm)) {
+}
+@media screen and (prefers-reduced-motion: reduce) {
+}

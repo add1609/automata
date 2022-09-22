@@ -1,0 +1,49 @@
+:root {
+    --nav-width: 1024px;
+    --main-width: 1400px;
+    --header-height: 60px;
+    --footer-height: 60px;
+    --content-gap: 20px;
+    --gap: 24px;
+    --radius: 8px;
+    --theme: rgb(29, 30, 32);
+    --entry: rgb(46, 46, 51);
+    --primary: rgb(218, 218, 219);
+    --secondary: rgb(155, 156, 157);
+    --tertiary: rgb(65, 66, 68);
+    --content: rgb(196, 196, 197);
+    --code-bg: rgb(55, 56, 62);
+    --border: rgb(51, 51, 51);
+    --accent-1: #52b36d;
+    --accent-2: #198754;
+    --accent-3: #157347;
+    --accent-4: #0b4c2f;
+    --break-md: 740px;
+    --break-sm: 430px;
+}
+html {
+    overflow-y: scroll;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--primary);
+    background: var(--theme);
+    word-break: break-word;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+@media screen and (prefers-color-scheme: dark) {
+    html {color-scheme: dark;}
+}

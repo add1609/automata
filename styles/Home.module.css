@@ -1,0 +1,14 @@
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - var(--footer-height) - 8rem);
+    max-width: var(--main-width);
+    padding: 4rem;
+    margin: auto;
+}
+.main a:hover,
+.main a:focus,
+.main a:active {
+    text-decoration: underline;
+}
